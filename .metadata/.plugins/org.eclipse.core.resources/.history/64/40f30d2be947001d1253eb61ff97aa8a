@@ -1,0 +1,12 @@
+
+public class NavioMercante extends Navio{
+	
+	private double capacidadeCarga;
+	private double carga;
+	
+	public NavioMercante(String n, int t) {
+		super(n, t);
+		// TODO Auto-generated constructor stub
+	}
+
+}

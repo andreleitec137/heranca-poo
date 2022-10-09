@@ -1,0 +1,17 @@
+public class Navio {
+	private int numTripulantes;
+	private String nome;
+	
+	public Navio(String n, int t) {
+		numTripulantes = t;
+		nome = n;
+	}
+	
+	public int getNumTripulantes() {
+		return numTripulantes;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+}

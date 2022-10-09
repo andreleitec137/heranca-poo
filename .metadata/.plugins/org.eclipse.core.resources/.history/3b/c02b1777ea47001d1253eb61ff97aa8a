@@ -1,0 +1,9 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		NavioMercante nm = new NavioMercante("Teste", 30, 10, 200);
+		nm.carregamento(0);
+	}
+
+}

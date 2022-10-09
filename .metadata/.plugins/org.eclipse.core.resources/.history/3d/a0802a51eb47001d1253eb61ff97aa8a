@@ -1,0 +1,12 @@
+
+public class NaviosDeGuerra extends Navio {
+	
+	private double blindagem;
+	private double ataque;
+	
+	public NaviosDeGuerra(String n, int t) {
+		super(n, t);
+		// TODO Auto-generated constructor stub
+	}
+
+}

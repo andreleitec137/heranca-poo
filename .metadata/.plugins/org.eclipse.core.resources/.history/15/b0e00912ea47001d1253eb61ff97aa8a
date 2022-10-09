@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Navio n = new Navio("Teste", 30);
+		n.exibirInfoGeral();
+		NavioMercante nm = new NavioMercante("Teste", 30, 200, 10);
+		nm.carregamento(0);
+	}
+
+}

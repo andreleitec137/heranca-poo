@@ -1,0 +1,9 @@
+public class Navio {
+	private int numTripulantes;
+	private String nome;
+	
+	public Navio(String n, int t) {
+		this.numTripulantes = t;
+		this.nome = n;
+	}
+}

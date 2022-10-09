@@ -1,0 +1,9 @@
+
+public class NavioMercante extends Navio{
+
+	public NavioMercante(String n, int t) {
+		super(n, t);
+		// TODO Auto-generated constructor stub
+	}
+
+}

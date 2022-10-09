@@ -1,0 +1,45 @@
+
+public class NavioMercante extends Navio{
+	
+	private double capacidadeCarga;
+	private double carga;
+	
+	public NavioMercante(String n, int t, double c, double cc) {
+		super(n, t);
+		carga = c;
+		capacidadeCarga = cc;
+	}
+	
+	public double getCapacidadeCarga() {
+		return capacidadeCarga;
+	}
+
+	public double getCarga() {
+		return carga;
+	}
+	
+	public double setCarga(int cargaNova) {
+		carga = cargaNova + getCarga();
+		return carga;
+	}
+	
+	public void carregamento(int p1) {
+		Double carregamentoPerc = calculaPerc(p1);
+		super.exibirInfoGeral();
+		
+		if(carregamentoPerc == 0) System.out.println("Navio está cheio");
+		
+		System.out.println("O navio está com " + carregamentoPerc + "% da carga ocupado");
+	}
+	
+	public double calculaPerc(int p1) {
+		Double carregamentoPerc = (getCarga() * 100) / getCapacidadeCarga();
+		
+		if(carregamentoPerc >= 100) return 0;
+		
+		setCarga(p1);
+		carregamentoPerc = (getCarga() * 100) / getCapacidadeCarga();
+		
+		return carregamentoPerc;
+	}
+}
